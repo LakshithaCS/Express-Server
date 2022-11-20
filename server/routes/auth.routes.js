@@ -111,6 +111,11 @@ const { getMaxListeners } = require('../models/users')
 
 const router = express.Router();
 
+router.get("/", (req, res)=>{
+    console.log("hello");
+    res.send("hello");
+});
+
 //For admin sign in
 //For Sign-In user
 //formvalidation added
